@@ -18,8 +18,8 @@ My biggest challenge would be creating a REST API for the first time since my ex
 Using Github is an acceptable form of git.
 
 
-
-Steps to Run:
+<p>
+<h1>Steps to Run:</h1>
 1. Once you have downloaded the repo, change your directory to be inside of it.
 2. set the Flask app name and env with the following commands:
 	```
