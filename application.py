@@ -1,7 +1,8 @@
 # Setting up Flask and requests to build out the API
-from flask import Flask, requests
+from flask import Flask
 app = Flask(__name__)
 
+import requests
 
 # The initial landing page and home for my Application
 @app.route('/')
@@ -10,12 +11,16 @@ def home():
 
 
 # Challenge Task 1.b - Implementing a GET request made to /hello that returns hello world
-@app.route('/hello')
+@app.route('/hello', methods=['GET'])
 def hello_world():
     headers = {'HELLO WORLD': 'HELLO WORLD'}
     return 'hello world'
 
-#
+
+
+
+
+
 
 # This was scratched code that I was using to try to change the ports during a testing issue.
 #if __name__ == '__main__':
