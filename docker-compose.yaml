@@ -1,0 +1,14 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  application:
+    build: .
+    # ports:
+      # - "9001:9001"
+  nginx:
+    image: nginx
+    ports:
+      - "8080:8080"
+    links:
+      - application
+    volumes:
+      - ./reverse_proxy.conf:/etc/nginx/nginx.conf
