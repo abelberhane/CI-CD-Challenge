@@ -31,9 +31,9 @@ Steps to Run:
 	export FLASK_ENV=development
 	```
 3. Run the app with
-```			
-flask run
-```
+	```			
+	flask run
+	```
 
 <p>
 <br>
@@ -46,6 +46,6 @@ flask run
 	<br>
 	export FLASK_ENV=development
 <br>3. Run the app with:
-	```	
-  	flask run
+	```
+	flask run
 	```
