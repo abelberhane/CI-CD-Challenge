@@ -33,7 +33,6 @@ My biggest challenge would be creating a REST API for the first time since my ex
 
 
 <h1>Endpoints to check</h1>
-<br>
-1. http://localhost:8080/
-2. http://localhost:8080/hello
-3. http://localhost:8080/error
+1. http://localhost:8080/<br>
+2. http://localhost:8080/hello<br>
+3. http://localhost:8080/error<br>
