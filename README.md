@@ -34,6 +34,6 @@ Using Github is an acceptable form of git.
 	<br>
 4. Run the app with
 		
-	```flask run```
+	```flask run --port="9001"```
 	
 
