@@ -1,13 +1,19 @@
-version: "3.9"  # optional since v1.27.0
+version: "3.9"
 services:
+  # Challenge 3.a. - First container is our application
   application:
+    # Build brings all contents of my Repo that I am working with
     build: .
+      # Challenge 3.b - By commenting the ports out we are ensuring the Flask API is not exposed externally
     # ports:
       # - "9001:9001"
+  # Challenge 3.a - Second container is NGINX
   nginx:
     image: nginx
+    # Challenge 3.e - Below I will be exposing NGINX to port 8080
     ports:
       - "8080:8080"
+    # Challenge 3.b - By linking NGINX to our application, we ensure they can talk to each other
     links:
       - application
     volumes:
