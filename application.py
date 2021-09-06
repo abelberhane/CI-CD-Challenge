@@ -22,7 +22,7 @@ def hello_world():
     if request.method == 'GET':
         return 'hello world'
     else:
-        # While I was unable to return HELLO WORLD via curl, the below allowed me to see HELLO WORLD in a postman HEAD Call header
+        # While unable to return HELLO WORLD via curl, the below else statement allowed me to see HELLO WORLD in a postman HEAD Call header
         resp = make_response()
         resp.headers['HELLO_WORLD'] = "HELLO WORLD"
         return resp
