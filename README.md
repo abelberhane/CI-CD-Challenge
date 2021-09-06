@@ -21,7 +21,11 @@ Using Github is an acceptable form of git.
 
 Steps to Run:
 1. Once you have downloaded the repo, change your directory to be inside of it.
-2. set the Flask app name and env with the following commands:
+2. Run the following command to activate the virtual environment:
+	```
+	source .venv/Scripts/activate
+	```
+3. set the Flask app name and env with the following commands:
 	```
 	export FLASK_APP=application.py
 	export FLASK_ENV=development
@@ -30,7 +34,7 @@ Steps to Run:
 ```			
 flask run
 ```
-=======
+
 <p>
 <br>
 <br>
@@ -42,6 +46,6 @@ flask run
 	<br>
 	export FLASK_ENV=development
 <br>3. Run the app with:
-  <br>		
-  flask run
- 
+	```	
+  	flask run
+	```
