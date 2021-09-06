@@ -14,11 +14,23 @@ running.
 
 My biggest challenge would be creating a REST API for the first time since my experience with them has only been consuming them. The next would be creating my first Docker contained app and integrating it into a pipeline. 
 
-<br>
+
 <h1>Assumptions:</h1>
 Using Github is an acceptable form of git.
 
 
+Steps to Run:
+1. Once you have downloaded the repo, change your directory to be inside of it.
+2. set the Flask app name and env with the following commands:
+	```
+	export FLASK_APP=application.py
+	export FLASK_ENV=development
+	```
+3. Run the app with
+```			
+flask run
+```
+=======
 <p>
 <br>
 <br>
