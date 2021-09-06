@@ -9,7 +9,7 @@ app = Flask(__name__)
 def home():
     return '<h1>Welcome to my first REST API.</h1>' \
            '<p>Please go to /hello to view a message.</p>' \
-           '<p>Visit /logparser to upload your logs.</p>'
+           '<p>Visit /error to upload your logs.</p>'
 
 
 # Challenge Task 1.b - Implementing a GET request made to /hello that returns hello world
@@ -23,7 +23,7 @@ def hello_world():
 
 # Challenge Task 1.d - A route to parse logs and provide only the ones with error messages
 
-@app.route('/logparser', methods=['GET', 'POST'])
+@app.route('/error', methods=['GET', 'POST'])
 def log_parser():
     # The GET method initiates the landing page where you submit the log
     if request.method == 'GET':

@@ -12,28 +12,22 @@ may have made, and any instructions for getting the resulting environment up and
 running.
 
 
-My biggest challenge would be creating a REST API for the first time since my experience with them has only been consuming them. The next would be creating my first Docker contained app and integrating it into a pipeline. 
+My biggest challenge would be creating a REST API for the first time since my experience with them has only been consuming them. The next would be creating my first Docker contained app and integrating it into a pipeline. Working with NGINX hands on will be new as well but I am excited for the challenge.
 
 
 <h1>Assumptions:</h1>
 Using Github is an acceptable form of git.
+Another assumption that I have made is that application size does not matter, I was free to test out various imports and allowed my requirements.txt to grow as a result.
+I also assumed that Python 3.7.9 would be ok.
+I made the assumption that I should not spend all of my time working on problems like the HEAD request and the log request when I knew there was a lot of learning to do in regards to how to run Docker and what goes into a Docker Compose File let alone NGINX.
+Initially I made the assumption that I would be able to provide the log for the log parser in an example.log format before processing truly how you would be verifying it.
+After reviewing the python:buster image, I made the assumption that its apt-get apt-update around line 15-17 would update everything to its latest versions.
 
 
 <h1>Steps to Run:</h1>
 <br>
 1. Once you have downloaded the repo, change your directory to be inside of it. <br>
-2. Run the following command to activate the virtual environment:
+2. Run the following command to bring up the app:
 	
-	source .venv/Scripts/activate
-	
-3. set the Flask app name and env with the following commands:
-	
-	```export FLASK_APP=application.py```
-	
-	```export FLASK_ENV=development```
-	<br>
-4. Run the app with
-		
-	```flask run --port="9001"```
-	
+	docker-compose up -d 
 
