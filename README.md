@@ -11,8 +11,10 @@ framework/pipeline.
 may have made, and any instructions for getting the resulting environment up and
 running.
 
-
-My biggest challenge would be creating a REST API for the first time since my experience with them has only been consuming them. The next would be creating my first Docker contained app and integrating it into a pipeline. Working with NGINX hands on will be new as well but I am excited for the challenge.
+<h1>Biggest Challenges</h1>
+My biggest challenge would be creating a REST API for the first time since my experience with them has only been consuming them. <br>
+The next would be creating my first Docker contained app and integrating it into a pipeline. <br>
+Working with NGINX hands on will be new as well but I am excited for the challenge. <br>
 
 
 <h1>Assumptions:</h1>
@@ -25,7 +27,6 @@ My biggest challenge would be creating a REST API for the first time since my ex
 
 
 <h1>Steps to Run:</h1>
-<br>
 1. Once you have downloaded the repo, change your directory to be inside of it. <br>
 2. Run the following command to bring up the app:
 	
