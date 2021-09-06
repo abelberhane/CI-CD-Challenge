@@ -19,7 +19,7 @@ My biggest challenge would be creating a REST API for the first time since my ex
 Using Github is an acceptable form of git.
 
 
-Steps to Run:
+<h1>Steps to Run:</h1>
 1. Once you have downloaded the repo, change your directory to be inside of it.
 2. Run the following command to activate the virtual environment:
 	```
@@ -30,22 +30,8 @@ Steps to Run:
 	export FLASK_APP=application.py
 	export FLASK_ENV=development
 	```
-3. Run the app with
+4. Run the app with
 	```			
 	flask run
 	```
 
-<p>
-<br>
-<br>
-<h1>Steps to Run:</h1>
-<br>1. Once you have downloaded the repo, change your directory to be inside of it.
-<br>2. set the Flask app name and env with the following commands:
-	<br>
-	export FLASK_APP=application.py
-	<br>
-	export FLASK_ENV=development
-<br>3. Run the app with:
-	```
-	flask run
-	```
