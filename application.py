@@ -1,5 +1,5 @@
 # Setting up Flask and requests to build out the API
-from flask import Flask, request, Response
+from flask import Flask, request, Response, make_response
 
 app = Flask(__name__)
 
@@ -19,7 +19,13 @@ def hello_world():
     # Below was my early failed attempt at adding custom headers.
     # Another thought was to catch the GET methods in an if else statement
     # headers = {'HELLO WORLD': 'HELLO WORLD'}
-    return 'hello world'
+    if request.method == 'GET':
+        return 'hello world'
+    else:
+        # While I was unable to return HELLO WORLD via curl, the below allowed me to see HELLO WORLD in a postman HEAD Call header
+        resp = make_response()
+        resp.headers['HELLO_WORLD'] = "HELLO WORLD"
+        return resp
 
 # Challenge Task 1.d - A route to parse logs and provide only the ones with error messages
 
