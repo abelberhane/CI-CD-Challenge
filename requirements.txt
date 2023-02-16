@@ -33,4 +33,4 @@ SQLAlchemy==1.4.23
 texttable==1.6.4
 urllib3==1.26.6
 websocket-client==0.59.0
-Werkzeug==2.0.1
+Werkzeug==2.2.3
